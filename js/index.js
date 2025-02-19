@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var line = params.get('id');
     var button = document.getElementById('button');
     button.classList.add('disabled');
-    button.setAttribute('value', 'ちょっと待っててね');
+    button.innerHTML = 'ちょっと待っててね';
     document.getElementById('loading').style.display = "block";
     var resultarea = document.getElementById('result');
     const url =
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             '" class="twitter-share-button data-lang="ja" data-show-count="false" target="_brank">' + 
             '<button type="button" class="btn btn-info">結果をスクショして画像添付でポストしよう</button></a>' +
             '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
-        button.setAttribute('value', 'ランダムに2022年10月半ばまでのISLAND TVが出てくるボタン');
+        button.innerHTML = 'ランダムに2022年10月半ばまでの<br>ISLAND TVが出てくるボタン';
         button.classList.remove('disabled');
         document.getElementById('loading').style.display = "none";
       }
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 function tvGet(){
     var button = document.getElementById('button');
     button.classList.add('disabled');
-    button.setAttribute('value', 'ちょっと待っててね');
+    button.innerHTML = 'ちょっと待っててね';
     document.getElementById('loading').style.display = "block";
     var resultarea = document.getElementById('result');
     const url =
@@ -76,7 +76,7 @@ function tvGet(){
             '" class="twitter-share-button data-lang="ja" data-show-count="false" target="_brank">' + 
             '<button type="button" class="btn btn-info">結果をスクショして画像添付でポストしよう</button></a>' +
             '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
-        button.setAttribute('value', 'もう一度ランダムに2022年10月半ばまでのISLAND TVを出す');
+        button.innerHTML = 'もう一度ランダムに2022年10月半ばまでの<br>ISLAND TVを出す';
         button.classList.remove('disabled');
         document.getElementById('loading').style.display = "none";
       }
