@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         resultarea.style.display = "block";
         var tweetUrl = "https://twitter.com/intent/tweet?text=" + 
             encodeURIComponent(res['title'] + " - ISLAND TV SUPER SEARCH NEO\n#ITSS_NEO\n") + 
-            "&url=" + encodeURIComponent(window.location.href);
+            "&url=" + encodeURIComponent("akiyuri-dev.github.io/itss_neo/?id=" + res['linenumber']);
             //ツイートボタン作成
         document.getElementById("tweet").innerHTML = '<a href="' + tweetUrl + 
             '" class="twitter-share-button data-lang="ja" data-show-count="false" target="_brank">' + 
@@ -70,7 +70,7 @@ function tvGet(){
         resultarea.style.display = "block";
         var tweetUrl = "https://twitter.com/intent/tweet?text=" + 
             encodeURIComponent(res['title'] + " - ISLAND TV SUPER SEARCH NEO\n#ITSS_NEO\n") + 
-            "&url=" + encodeURIComponent("https://akiyuri-dev.github.io/itss_neo/?id=" + res['linenumber']);
+            "&url=" + encodeURIComponent("akiyuri-dev.github.io/itss_neo/?id=" + res['linenumber']);
             //ツイートボタン作成
         document.getElementById("tweet").innerHTML = '<a href="' + tweetUrl + 
             '" class="twitter-share-button data-lang="ja" data-show-count="false" target="_brank">' + 
