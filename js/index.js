@@ -7,7 +7,7 @@ function tvGet(){
     const options = {
     method: "GET",
     headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "text/plain",
     },
     };
     //const data = await fetchData(url, options);
